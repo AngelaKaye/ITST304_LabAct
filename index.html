@@ -16,20 +16,30 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body class="fullscreen">
-  <h1>Tic Tac Toe</h1>
-		<div class="board">
-			<div class="square" data-square-id="0"></div>
-			<div class="square" data-square-id="1"></div>
-			<div class="square" data-square-id="2"></div>
-			<div class="square" data-square-id="3"></div>
-			<div class="square" data-square-id="4"></div>
-			<div class="square" data-square-id="5"></div>
-			<div class="square" data-square-id="6"></div>
-			<div class="square" data-square-id="7"></div>
-			<div class="square" data-square-id="8"></div>
-		</div>
-		<button id="restart">Restart Game</button>
-		<script src="script.js"></script>
+  <div id="center">
+    <div id="game">
+      <div id="maze">
+        <div id="end"></div>
+      </div>
+      <div id="joystick">
+        <div class="joystick-arrow"></div>
+        <div class="joystick-arrow"></div>
+        <div class="joystick-arrow"></div>
+        <div class="joystick-arrow"></div>
+        <div id="joystick-head"></div>
+      </div>
+      <div id="note">
+        Click the joystick to start!
+        <p>Move every ball to the center. Ready for hard mode? Press H</p>
+      </div>
+    </div>
+  </div>
+  <a id="youtube" href="https://youtu.be/bTk6dcAckuI" target="_blank">
+    <span>See how this game was made</span>
+  </a>
+  <div id="youtube-card">
+    How to simulate ball movement in a maze with JavaScript
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
